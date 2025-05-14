@@ -1,0 +1,93 @@
+# Fractal Analysis of Traffic Congestion
+
+This repository provides a modular Python framework to analyze traffic congestion using fractal theory. 
+
+
+Reference : Lee, G., Jha, A., Wiesenfeld, K., & Laval, J. (2025) Cracking the Code of Traffic Congestion: Criticality and KPZ Universality in Real-World Traffic. 
+
+---
+
+## 📁 Project Structure
+
+```
+kpz_i24/
+├── __init__.py                 # Makes the folder a package
+├── boxcount.py                 # Fractal dimension estimation via box-counting
+├── clustering.py               # Cluster labeling and Fisher exponent estimation
+├── plotting.py                 # Visualization helpers
+├── utils.py                    # Data loading utilities
+└── main.py                     # Main script to run experiments and generate figures
+```
+
+---
+
+## 🔧 Requirements
+
+Install dependencies with:
+
+```bash
+pip install numpy pandas matplotlib seaborn scipy
+```
+
+---
+
+## 📥 Input Format
+
+CSV files must contain:
+- `x`: spatial coordinate (e.g., km or miles)
+- `t`: time (e.g., seconds)
+- `speed`: instantaneous speed
+
+**Example filename:**
+```
+imputeOnly_11-29_WB_lane1_dx0.02_dt2.csv
+```
+
+Data for six days can be downloaded from --. 
+---
+
+## 🚀 How to Run
+
+Edit the CSV path in `main.py`:
+
+```python
+csv_path = f"data/imputeOnly_{date}_WB_lane{lane_number}_dx{dx}_dt{dt}.csv"
+```
+
+Then run the main analysis:
+
+```bash
+python main.py
+```
+
+The script performs the following:
+- Loads the spatiotemporal speed matrix
+- Estimates the delay and cutoff fractal dimension
+- Computes the Fisher exponent from cluster size distribution
+- Loops through different thresholds and dates
+- Saves plots to the `figs/` directory
+
+---
+
+## 📊 Output
+
+Plots saved in the `figs/` folder include:
+
+- **Time-space speed diagram**
+- **Clustered region matrix**
+- **Fisher exponent log-log survival plot**
+- **Delay Fractal dimension vs. threshold curves (per day)**
+- **Heatmap of D vs. date and threshold**
+
+---
+
+## 📘 Key Concepts
+
+- **Fractal Dimension**: Captures spatial irregularity and scaling behavior of congestion.
+- **Fisher Exponent (τ)**: Describes the power-law decay of cluster size distributions.
+- **Box-Counting Method**: Estimates fractal dimension using varying box sizes.
+- **Cluster Labeling**: 4-connectivity method applied to low-speed cells.
+
+---
+
+
