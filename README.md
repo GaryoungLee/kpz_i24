@@ -5,12 +5,21 @@ This repository provides a modular Python framework to analyze traffic congestio
 
 Reference : Lee, G., Jha, A., Wiesenfeld, K., & Laval, J. (2025) Cracking the Code of Traffic Congestion: Criticality and KPZ Universality in Real-World Traffic. 
 
+This research leverages I24 Motion dataset. 
+The raw dataset can be accessed below. 
+
+https://i24motion.org/access_data
+
+Reference: Gloudemans, D., Wang, Y., Ji, J., Zachar, G., Barbour, W., Hall, E., Cebelak, M., Smith, L. and Work, D.B., 2023. I-24 MOTION: An instrument for freeway traffic science. Transportation Research Part C: Emerging Technologies, 155, p.104311.
+
+
 ---
 
 ## 📁 Project Structure
 
 ```
 kpz_i24/
+├── 📁 data                     # Processed data from I24 Motion dataset
 ├── __init__.py                 # Makes the folder a package
 ├── boxcount.py                 # Fractal dimension estimation via box-counting
 ├── clustering.py               # Cluster labeling and Fisher exponent estimation
