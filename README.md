@@ -20,6 +20,7 @@ Reference: Gloudemans, D., Wang, Y., Ji, J., Zachar, G., Barbour, W., Hall, E., 
 ```
 kpz_i24/
 ├── 📁 data                     # Processed data from I24 Motion dataset
+├── 📁 figs                     # Where figures are saved
 ├── __init__.py                 # Makes the folder a package
 ├── boxcount.py                 # Fractal dimension estimation via box-counting
 ├── clustering.py               # Cluster labeling and Fisher exponent estimation
