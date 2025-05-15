@@ -53,7 +53,7 @@ CSV files must contain:
 imputeOnly_11-29_WB_lane1_dx0.02_dt2.csv
 ```
 
-Data for six days can be downloaded from --. 
+
 ---
 
 ## 🚀 How to Run
