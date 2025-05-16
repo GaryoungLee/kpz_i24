@@ -16,11 +16,6 @@ Reference: Gloudemans, D., Wang, Y., Ji, J., Zachar, G., Barbour, W., Hall, E., 
 
 
 
-## Update Note
-
-(May 15, 2025) The repository will be updated with better explanations / codes to process raw data / additional codes for supplementary text.
-
-
 ## 📁 Project Structure
 
 ```
@@ -35,7 +30,11 @@ kpz_i24/
 └── main.py                     # Main script to run experiments and generate figures
 ```
 
----
+## Update Note
+
+(May 15, 2025) The repository will be updated with better explanations / codes to process raw data / additional codes for supplementary text.
+
+
 
 ## 🔧 Requirements
 
@@ -45,7 +44,7 @@ Install dependencies with:
 pip install numpy pandas matplotlib seaborn scipy
 ```
 
----
+
 
 ## 📥 Input Format
 
@@ -60,7 +59,7 @@ imputeOnly_11-29_WB_lane1_dx0.02_dt2.csv
 ```
 
 
----
+
 
 ## 🚀 How to Run
 
@@ -83,7 +82,7 @@ The script performs the following:
 - Loops through different thresholds and dates
 - Saves plots to the `figs/` directory
 
----
+
 
 ## 📊 Output
 
@@ -95,7 +94,7 @@ Plots saved in the `figs/` folder include:
 - **Delay Fractal dimension vs. threshold curves (per day)**
 - **Heatmap of D vs. date and threshold**
 
----
+
 
 ## 📘 Key Concepts
 
