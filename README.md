@@ -15,7 +15,6 @@ https://github.com/I24-MOTION
 Reference: Gloudemans, D., Wang, Y., Ji, J., Zachar, G., Barbour, W., Hall, E., Cebelak, M., Smith, L. and Work, D.B., 2023. I-24 MOTION: An instrument for freeway traffic science. Transportation Research Part C: Emerging Technologies, 155, p.104311.
 
 
----
 
 ## Update Note
 
